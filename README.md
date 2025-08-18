@@ -1,10 +1,10 @@
 # airbnb-clone-project
 **Airbnb Clone - Backend-Focused Learning Project**
 
-## ➡️ Overview
+## Overview
 This is a real-world learning project replicating a booking platform. It emphasizes backend development fundamentals with a strong focus on **system design, relational databases, secure APIs, and CI/CD**. The project simulates real engineering workflows and architecture.
 
-## ➡️ Project Goals
+ ➡️ Project Goals
 - ✅ **Team Collaboration:** GitHub-based workflow  
 - ✅ **Backend Architecture:** Modular service design  
 - ✅ **Relational Database Design:** Entities & relationships for bookings, listings, users  
@@ -13,7 +13,7 @@ This is a real-world learning project replicating a booking platform. It emphasi
 - ✅ **Documentation & Planning:** Communicate decisions, constraints, and trade-offs  
 - ✅ **Ecosystem Integration:** Explore Django, MySQL, and GraphQL in one stack  
 
-## ➡️ Tech Stack
+ ➡️ Tech Stack
 - **Backend Framework:** Django (Python)  
 - **API Layer:** GraphQL  
 - **Database:** MySQL  
