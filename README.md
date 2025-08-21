@@ -22,8 +22,8 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 
  ## 🗄️ Database Design
 - **Users**:
- - Fields: id, email, name, password_hash, role.
- - Relationships: A user can create multiple properties and bookings. A user can also post multiple reviews for different properties.
+   Fields: id, email, name, password_hash, role.
+   Relationships: A user can create multiple properties and bookings. A user can also post multiple reviews for different properties.
 - **Properties**:
  - Fields: id, owner_id, title, location, price.
  - Relationships: Belongs to a user (owner). Has multiple bookings and reviews associated with it.
