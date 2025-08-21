@@ -21,21 +21,21 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 - ✅ **CI/CD Pipelines**: Automates testing and deployment using tools like GitHub Actions.
 
  ## 🗄️ Database Design
-- **Users**:
-   Fields: id, email, name, password_hash, role.
-   Relationships: A user can create multiple properties and bookings. A user can also post multiple reviews for different properties.
-- **Properties**:
- - Fields: id, owner_id, title, location, price.
- - Relationships: Belongs to a user (owner). Has multiple bookings and reviews associated with it.
-- **Bookings**:
- - Fields: id, user_id, property_id, check_in_date, check_out_date.
- - Relationships: Belongs to a user (booker) and a property. Linked to a single payment record.
-- **Reviews**:
- - Fields: id, property_id, user_id, rating, comment.
- - Relationships: Belongs to a user (reviewer) and a property. A property can have multiple reviews from different users.
-- **Payments**:
- - Fields: id, booking_id, amount, payment_date.
- - Relationships: Belongs to a booking. Each booking is associated with one payment.
+➡️**Users**:
+ >>- Fields: id, email, name, password_hash, role.
+ >>- Relationships: A user can create multiple properties and bookings. A user can also post multiple reviews for different properties.
+➡️**Properties**:
+ >>- Fields: id, owner_id, title, location, price.
+ >>- Relationships: Belongs to a user (owner). Has multiple bookings and reviews associated with it.
+➡️**Bookings**:
+ >>- Fields: id, user_id, property_id, check_in_date, check_out_date.
+ >>- Relationships: Belongs to a user (booker) and a property. Linked to a single payment record.
+➡️**Reviews**:
+ >>- Fields: id, property_id, user_id, rating, comment.
+ >>- Relationships: Belongs to a user (reviewer) and a property. A property can have multiple reviews from different users.
+➡️**Payments**:
+ >>- Fields: id, booking_id, amount, payment_date.
+ >>- Relationships: Belongs to a booking. Each booking is associated with one payment.
 
 ## 🌟 Feature Breakdown
 - **User Management**: Enables registration, authentication, and profile management. It ensures secure access and personalized user experiences.
