@@ -2,7 +2,7 @@
 **Airbnb Clone - Backend-Focused Learning Project**
 
 ## 🚀 Overview 
-The Airbnb Clone Project is a full-stack web application designed to replicate the core functionality of a booking platform like Airbnb. It focuses on building a robust backend to manage user interactions, property listings, bookings, and payments using technologies like Django, PostgreSQL, and GraphQL. The project aims to provide hands-on experience in backend systems, database design, API development, and application security to create a scalable and efficient platform.
+The Airbnb Clone Project is a backend system designed to replicate the core functionality of a booking platform like Airbnb. It focuses on building a robust backend to manage user interactions, property listings, bookings, and payments using technologies like Django, PostgreSQL, and GraphQL. The project aims to provide hands-on experience in backend systems, database design, API development, and application security to create a scalable and efficient platform.
 
 ## 👥 Team Roles
 - ➡️ **Backend Developer**: Implements API endpoints, designs database schemas, and handles business logic to support features like user authentication and property management.
@@ -20,12 +20,33 @@ The Airbnb Clone Project is a full-stack web application designed to replicate t
 - ✅ **Docker**: Ensures consistent development and deployment environments through containerization.
 - ✅ **CI/CD Pipelines**: Automates testing and deployment using tools like GitHub Actions.
 
- ## 🗄️ Database Design
-➡️**Users**: Fields: id, email, name, password_hash, role.Relationships: A user can create multiple properties and bookings. A user can also post multiple reviews for different properties.
-➡️**Properties**: Fields: id, owner_id, title, location, price. Relationships: Belongs to a user (owner). Has multiple bookings and reviews associated with it.
-➡️**Bookings**: Fields: id, user_id, property_id, check_in_date, check_out_date. Relationships: Belongs to a user (booker) and a property. Linked to a single payment record.
-➡️**Reviews**: Fields: id, property_id, user_id, rating, comment. Relationships: Belongs to a user (reviewer) and a property. A property can have multiple reviews from different users.
-➡️**Payments**: Fields: id, booking_id, amount, payment_date. Relationships: Belongs to a booking. Each booking is associated with one payment.
+## 🗄️ Database Design
+
+### Users  
+- **Fields:** `id`, `email`, `name`, `password_hash`, `role`  
+- **Relationships:**  
+  - A user can create multiple properties and bookings  
+  - A user can post multiple reviews on different properties  
+### Properties  
+- **Fields:** `id`, `owner_id`, `title`, `location`, `price`  
+- **Relationships:**  
+  - Belongs to a user (owner)  
+  - Has multiple bookings and reviews  
+### Bookings  
+- **Fields:** `id`, `user_id`, `property_id`, `check_in_date`, `check_out_date`  
+- **Relationships:**  
+  - Belongs to a user (booker) and a property  
+  - Linked to a single payment record  
+### Reviews  
+- **Fields:** `id`, `property_id`, `user_id`, `rating`, `comment`  
+- **Relationships:**  
+  - Belongs to a user (reviewer) and a property  
+  - A property can have multiple reviews from different users  
+### Payments  
+- **Fields:** `id`, `booking_id`, `amount`, `payment_date`  
+- **Relationships:**  
+  - Belongs to a booking  
+  - Each booking is associated with one payment
 
 ## 🌟 Feature Breakdown
 - **User Management**: Enables registration, authentication, and profile management. It ensures secure access and personalized user experiences.
