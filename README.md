@@ -72,3 +72,11 @@ The Airbnb Clone Project is a backend system designed to replicate the core func
 ## 📜 API Documentation
 - **REST API**: Documented using the OpenAPI standard, covering endpoints for users (/users/, /users/{user_id}/), properties (/properties/, /properties/{property_id}/), bookings (/bookings/, /bookings/{booking_id}/), payments (/payments/), and reviews (/reviews/, /reviews/{review_id}/).
 - **GraphQL API**: Provides a flexible query language for retrieving and manipulating data efficiently.
+
+## 📊 Project Status
+The Airbnb Clone project is currently in its initial setup phase. Here’s what has been completed so far:
+- ✅ Project Overview & Tech Stack Defined
+- ✅ Team Roles Outlined
+- ✅ Database Schema Drafted
+- ✅ Feature Breakdown Documented
+- ✅ API Security & CI/CD Plan Defined
