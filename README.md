@@ -5,16 +5,19 @@
 The Airbnb Clone Project is a backend system designed to replicate the core functionality of a booking platform like Airbnb. It focuses on building a robust backend to manage user interactions, property listings, bookings, and payments using technologies like Django, PostgreSQL, and GraphQL. The project aims to provide hands-on experience in backend systems, database design, API development, and application security to create a scalable and efficient platform.
 
 ## 👥 Team Roles
-- ➡️ **Backend Developer**: Implements API endpoints, designs database schemas, and handles business logic to support features like user authentication and property management.
-- ➡️ **Database Administrator**: Designs and optimizes the PostgreSQL database, including indexing and caching, to ensure efficient data storage and retrieval.
-- ➡️ **DevOps Engineer**: Manages deployment, scaling, and CI/CD pipelines using tools like Docker and GitHub Actions to streamline development and ensure reliability. 
-- ➡️ **QA Engineer**: Tests backend functionalities to ensure they meet quality standards and work seamlessly across user management, bookings, and payments.
+- **Backend Developer**: Implements API endpoints, designs database schemas, and handles business logic to support features like user authentication and property management.
+- **Database Administrator**: Designs and optimizes the PostgreSQL database, including indexing and caching, to ensure efficient data storage and retrieval.
+- **DevOps Engineer**: Manages deployment, scaling, and CI/CD pipelines using tools like Docker and GitHub Actions to streamline development and ensure reliability. 
+- **QA Engineer**: Tests backend functionalities to ensure they meet quality standards and work seamlessly across user management, bookings, and payments.
+- **Frontend Developer**: Consumes REST/GraphQL APIs, integrates authentication and state management, and implements error handling (not included in this repository).
+- **UI/UX Designer**: User flows and wireframes that inform API needs and data shapes (not included in this repository).
+- **Project Manager**: Manages scope, timelines, stakeholder communication, risk tracking.
 
 ## ⚙️ Technology Stack
 - ✅ **Django**: A Python web framework used to build secure and scalable RESTful APIs for the application.
 - ✅ **Django REST Framework**: Provides tools for creating and managing RESTful APIs to handle CRUD operations. 
 - ✅ **PostgreSQL**: A relational database for storing data related to users, properties, bookings, reviews, and payments. 
-- ✅ **GraphQL**: Enables flexible and efficient querying of data for seamless frontend-backend integration.
+- ✅ **GraphQL**: Provides flexible and efficient querying of data for seamless frontend-backend integration.
 - ✅ **Celery**: Handles asynchronous tasks like sending notifications or processing payments.
 - ✅ **Redis**: Supports caching and session management to improve performance. 
 - ✅ **Docker**: Ensures consistent development and deployment environments through containerization.
@@ -36,7 +39,7 @@ The Airbnb Clone Project is a backend system designed to replicate the core func
 - **Fields:** `id`, `user_id`, `property_id`, `check_in_date`, `check_out_date`  
 - **Relationships:**  
   - Belongs to a user (booker) and a property  
-  - Linked to a single payment record  
+  - Each booking is linked to a single payment record. 
 ### Reviews  
 - **Fields:** `id`, `property_id`, `user_id`, `rating`, `comment`  
 - **Relationships:**  
@@ -64,6 +67,7 @@ The Airbnb Clone Project is a backend system designed to replicate the core func
 
 ## 🔄 CI/CD Pipeline
 - CI/CD pipelines automate testing, building, and deploying code to ensure reliable and efficient releases. For the Airbnb Clone Project, they help catch errors early, maintain code quality, and streamline deployment. Tools like GitHub Actions and Docker are used to run automated tests and ensure consistent environments across development and production.
+- Why it matters: Faster deployments, automated testing, continuous feedback, fewer regressions, and repeatable releases.
 
 ## 📜 API Documentation
 - **REST API**: Documented using the OpenAPI standard, covering endpoints for users (/users/, /users/{user_id}/), properties (/properties/, /properties/{property_id}/), bookings (/bookings/, /bookings/{booking_id}/), payments (/payments/), and reviews (/reviews/, /reviews/{review_id}/).
